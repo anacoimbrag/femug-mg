@@ -1,8 +1,10 @@
 import React from "react"
-import Button from "./button";
+import Button from "./button"
+import SEO from "./seo";
 
 const Home = () => (
   <div className="container code orverlay">
+    <SEO title="Home" keywords={[`femug`, `minas gerais`, `front end`]} />
     <div
       className="texts"
       style={{
@@ -19,14 +21,21 @@ const Home = () => (
         periféricas relacionadas.
       </p>
     </div>
-    <div className="nextEvent" style={{
-        color: 'white',
-        textAlign: 'center',
-        margin: '5% auto'
-    }}>
+    <div
+      className="nextEvent"
+      style={{
+        color: "white",
+        textAlign: "center",
+        margin: "5% auto",
+      }}
+    >
       <h6>Próximo evento</h6>
       <p>Meetup Abril - Edição especial XXX</p>
-      <Button color='purple' text='Fazer inscrição' action={() => console.log('perfomed action')} />
+      <Button
+        color="purple"
+        text="Fazer inscrição"
+        action={() => console.log("perfomed action")}
+      />
     </div>
   </div>
 )

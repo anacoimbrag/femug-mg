@@ -12,7 +12,7 @@ const Button = ({ color, text, action }) => (
     style={{
       backgroundColor: colors[color],
       border: 'none',
-      borderRadius: '8px',
+      borderRadius: '4px',
       padding: '.4em 2em'
     }}
     onClick={action}
