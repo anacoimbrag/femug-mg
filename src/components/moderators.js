@@ -43,6 +43,11 @@ const Moderators = () => (
         picture="https://pbs.twimg.com/profile_images/1102658491284639744/pL7ZiykJ_400x400.jpg"
         job="Dev Lead"
         company="Kobe"
+        social={{
+          github: "https://github.com/anacoimbrag",
+          twitter: "https://twitter.com/anacoimbrag",
+          linkedin: "https://www.linkedin.com/in/anacoimbrag/",
+        }}
       />
 
       <Moderator
@@ -50,6 +55,11 @@ const Moderators = () => (
         picture="https://pbs.twimg.com/profile_images/1103946004070653952/m7NVOG04_400x400.png"
         job="Cargo"
         company="Empresa"
+        social={{
+          github: "https://github.com/anacoimbrag",
+          twitter: "https://twitter.com/anacoimbrag",
+          linkedin: "https://www.linkedin.com/in/anacoimbrag/",
+        }}
       />
 
       <Moderator
@@ -57,6 +67,11 @@ const Moderators = () => (
         picture="https://pbs.twimg.com/profile_images/1094299828979421184/r_g_qZ7T_400x400.jpg"
         job="Cargo"
         company="Empresa"
+        social={{
+          github: "https://github.com/anacoimbrag",
+          twitter: "https://twitter.com/anacoimbrag",
+          linkedin: "https://www.linkedin.com/in/anacoimbrag/",
+        }}
       />
     </div>
   </section>
@@ -91,7 +106,9 @@ const Moderator = ({ name, picture, company, job, social }) => (
         width: "30%",
       }}
     >
-      <FontAwesomeIcon icon={["fab", "github"]} />
+      <a href={social.github}>
+        <FontAwesomeIcon icon={["fab", "github"]} />
+      </a>
       <FontAwesomeIcon icon={["fab", "twitter"]} />
       <FontAwesomeIcon icon={["fab", "linkedin"]} />
     </div>
