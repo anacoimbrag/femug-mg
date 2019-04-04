@@ -11,15 +11,15 @@ const Home = () => (
         color: "white",
         textAlign: "center",
         margin: "auto",
-        width: "40%",
+        width: "52.5%",
       }}
     >
-      <h2>Front End Meetup Group de Minas Gerais</h2>
-      <p>
+      <h1>Front End Meetup Group de Minas Gerais</h1>
+      <h3 style={{ fontWeight: 400 }}>
         Trata-se de um evento para pessoas interessadas em aprender, evoluir e
         dividir conhecimentos relacionados ao front-end e tecnologias
         periféricas relacionadas.
-      </p>
+      </h3>
     </div>
     <div
       className="nextEvent"
@@ -29,7 +29,7 @@ const Home = () => (
         margin: "5% auto",
       }}
     >
-      <h3>Próximo evento</h3>
+      <h2>Próximo evento</h2>
       <p>Meetup Abril - Edição especial XXX</p>
       <Button
         color="purple"

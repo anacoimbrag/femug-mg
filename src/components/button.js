@@ -12,6 +12,7 @@ const Button = ({ color, text, action }) => (
     style={{
       backgroundColor: colors[color],
       color: "white",
+      fontSize: "1.2rem",
       border: "none",
       borderRadius: "4px",
       padding: ".4em 2em",
