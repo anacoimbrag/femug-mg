@@ -53,24 +53,24 @@ const Moderators = () => (
       <Moderator
         name="Juan Villaso"
         picture="https://pbs.twimg.com/profile_images/1103946004070653952/m7NVOG04_400x400.png"
-        job="Cargo"
-        company="Empresa"
+        job="Release Manager"
+        company="Energicos System"
         social={{
-          github: "https://github.com/anacoimbrag",
-          twitter: "https://twitter.com/anacoimbrag",
-          linkedin: "https://www.linkedin.com/in/anacoimbrag/",
+          github: "https://github.com/jprivillaso",
+          twitter: "https://twitter.com/jprivillaso",
+          linkedin: "https://www.linkedin.com/in/jprivillaso/",
         }}
       />
 
       <Moderator
         name="Juliana Helena"
         picture="https://pbs.twimg.com/profile_images/1094299828979421184/r_g_qZ7T_400x400.jpg"
-        job="Cargo"
-        company="Empresa"
+        job="Full Stack"
+        company="App Prova"
         social={{
-          github: "https://github.com/anacoimbrag",
-          twitter: "https://twitter.com/anacoimbrag",
-          linkedin: "https://www.linkedin.com/in/anacoimbrag/",
+          github: "https://github.com/JulianaHelena5",
+          twitter: "https://twitter.com/julianahelenaa5",
+          linkedin: "https://www.linkedin.com/in/juliana-helena/",
         }}
       />
     </div>
@@ -106,11 +106,15 @@ const Moderator = ({ name, picture, company, job, social }) => (
         width: "30%",
       }}
     >
-      <a href={social.github}>
+      <a href={social.github} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={["fab", "github"]} />
       </a>
-      <FontAwesomeIcon icon={["fab", "twitter"]} />
-      <FontAwesomeIcon icon={["fab", "linkedin"]} />
+      <a href={social.twitter} target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={["fab", "twitter"]} />
+      </a>
+      <a href={social.linkedin} target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={["fab", "linkedin"]} />
+      </a>
     </div>
   </div>
 )

@@ -51,6 +51,7 @@ const Header = ({ siteTitle }) => (
         href="http://bit.ly/FEMUGCodConduta"
         target="_blank"
         className="nav-link"
+        rel="noopener noreferrer"
       >
         Código de Conduta
       </a>

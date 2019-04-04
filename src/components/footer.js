@@ -15,6 +15,7 @@ const Footer = () => (
         href="http://bit.ly/FEMUGCodConduta"
         target="_blank"
         className="footer-link"
+        rel="noopener noreferrer"
       >
         Código de Conduta
       </a>
@@ -22,6 +23,7 @@ const Footer = () => (
         href="https://github.com/femug/femug"
         target="_blank"
         className="footer-link"
+        rel="noopener noreferrer"
       >
         Movimento FEMUG
       </a>
@@ -29,6 +31,7 @@ const Footer = () => (
         href="https://www.meetup.com/FEMUG-MG"
         target="_blank"
         className="footer-link"
+        rel="noopener noreferrer"
       >
         Eventos FEMUG-MG
       </a>
@@ -39,6 +42,7 @@ const Footer = () => (
       style={{ color: "white" }}
       target="_blank"
       href="https://www.gatsbyjs.org"
+      rel="noopener noreferrer"
     >
       Gatsby
     </a>
