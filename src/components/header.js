@@ -47,6 +47,13 @@ const Header = ({ siteTitle }) => (
       <Link to="/#hosts" className="nav-link">
         Seja um anfitrião
       </Link>
+      <a
+        href="http://bit.ly/FEMUGCodConduta"
+        target="_blank"
+        className="nav-link"
+      >
+        Código de Conduta
+      </a>
     </nav>
   </header>
 )
