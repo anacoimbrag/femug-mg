@@ -3,7 +3,7 @@ import Button from "./button"
 import SEO from "./seo"
 
 const Home = () => (
-  <section id="home" className="container code orverlay">
+  <section id="home" className="container code overlay">
     <SEO title="Home" keywords={[`femug`, `minas gerais`, `front end`]} />
     <div
       className="texts"
