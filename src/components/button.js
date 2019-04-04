@@ -4,16 +4,17 @@ import PropTypes from "prop-types"
 const colors = {
   purple: "#A058B5",
   red: "#A1342B",
-  green: "#34752F"
+  green: "#34752F",
 }
 
 const Button = ({ color, text, action }) => (
   <button
     style={{
       backgroundColor: colors[color],
-      border: 'none',
-      borderRadius: '4px',
-      padding: '.4em 2em'
+      color: "white",
+      border: "none",
+      borderRadius: "4px",
+      padding: ".4em 2em",
     }}
     onClick={action}
   >

@@ -3,24 +3,41 @@ import PropTypes from "prop-types"
 import React from "react"
 import Image from "./image"
 
+window.addEventListener("scroll", event => {
+  const navLinks = document.getElementsByClassName("nav-link")
+  const home = document.getElementById("home")
+  const header = document.querySelector("header")
+  for (const link of navLinks) {
+    link.classList.toggle(
+      "opaque",
+      document.documentElement.scrollTop >=
+        home.offsetHeight - header.offsetHeight / 2
+    )
+  }
+})
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
       position: "fixed",
-      zIndex: 1
+      width: "100%",
+      padding: `1.45rem 1.0875rem`,
+      display: "flex",
+      justifyContent: "space-between",
     }}
   >
-    <div
+    <Link to="/">
+      <Image />
+    </Link>
+    <nav
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        alignSelf: "center",
       }}
     >
-      <Link to="/">
-        <Image />
+      <Link to="/#moderators" className="nav-link">
+        Moderadores
       </Link>
-    </div>
+    </nav>
   </header>
 )
 
