@@ -13,14 +13,17 @@ const Moderators = () => (
   <section
     id="moderators"
     className="container"
-    style={{
-      justifyContent: "space-evenly",
-    }}
+    style={
+      {
+        // justifyContent: "space-evenly",
+      }
+    }
   >
     <h2
       style={{
         textTransform: "uppercase",
         marginLeft: "3rem",
+        marginTop: "8rem",
       }}
     >
       Moderadores
@@ -31,6 +34,8 @@ const Moderators = () => (
         display: "flex",
         justifyContent: "space-evenly",
         flexWrap: "wrap",
+        marginTop: "4rem",
+        marginBottom: "5%",
       }}
     >
       <Moderator

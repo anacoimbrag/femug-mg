@@ -1,9 +1,18 @@
 import React from "react"
 import Button from "./button"
-import SEO from "./seo"
 
 const Speakers = () => (
   <section id="speakers" className="container speaker overlay">
+    <h2
+      style={{
+        color: "white",
+        textTransform: "uppercase",
+        marginLeft: "3rem",
+        marginTop: "8rem",
+      }}
+    >
+      Venha palestrar
+    </h2>
     <div
       className="texts"
       style={{
@@ -13,15 +22,6 @@ const Speakers = () => (
         width: "40%",
       }}
     >
-      <h1
-        style={{
-          textTransform: "uppercase",
-          marginLeft: "3rem",
-        }}
-      >
-        Venha palestrar
-      </h1>
-
       <h3>
         Estamos sempre buscando pessoas para palestrar nos nossos encontros.
         Você tem algo interessante pra compartilhar com a gente?

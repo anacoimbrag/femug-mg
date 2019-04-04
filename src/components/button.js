@@ -15,7 +15,7 @@ const Button = ({ color, text, action }) => (
       fontSize: "1.2rem",
       border: "none",
       borderRadius: "4px",
-      padding: ".4em 2em",
+      padding: "0.8em 2em",
     }}
     onClick={action}
   >

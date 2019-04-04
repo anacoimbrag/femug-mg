@@ -10,10 +10,12 @@ window.addEventListener("scroll", event => {
   for (const link of navLinks) {
     link.classList.toggle(
       "opaque",
-      document.documentElement.scrollTop >=
+      (document.documentElement.scrollTop >=
         home.offsetHeight - header.offsetHeight / 2 &&
         document.documentElement.scrollTop <=
-          home.offsetHeight * 2 - header.offsetHeight / 2
+          home.offsetHeight * 2 - header.offsetHeight / 2) ||
+        document.documentElement.scrollTop >=
+          home.offsetHeight * 3 - header.offsetHeight / 2
     )
   }
 })
@@ -41,6 +43,9 @@ const Header = ({ siteTitle }) => (
       </Link>
       <Link to="/#speakers" className="nav-link">
         Venha Palestrar
+      </Link>
+      <Link to="/#hosts" className="nav-link">
+        Seja um anfitrião
       </Link>
     </nav>
   </header>
