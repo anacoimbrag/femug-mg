@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e27ea90a-b308-4b7b-ae9b-2c5ee71601cc/deploy-status)](https://app.netlify.com/sites/femugmg/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
@@ -7,8 +9,6 @@
 <h1 align="center">
   Gatsby's default starter
 </h1>
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e27ea90a-b308-4b7b-ae9b-2c5ee71601cc/deploy-status)](https://app.netlify.com/sites/femugmg/deploys)
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
