@@ -3,22 +3,23 @@ import PropTypes from "prop-types"
 import React from "react"
 import Image from "./image"
 
-window.addEventListener("scroll", event => {
-  const navLinks = document.getElementsByClassName("nav-link")
-  const home = document.getElementById("home")
-  const header = document.querySelector("header")
-  for (const link of navLinks) {
-    link.classList.toggle(
-      "opaque",
-      (document.documentElement.scrollTop >=
-        home.offsetHeight - header.offsetHeight / 2 &&
-        document.documentElement.scrollTop <=
-          home.offsetHeight * 2 - header.offsetHeight / 2) ||
-        document.documentElement.scrollTop >=
-          home.offsetHeight * 3 - header.offsetHeight / 2
-    )
-  }
-})
+typeof window != "undefined" &&
+  window.addEventListener("scroll", event => {
+    const navLinks = document.getElementsByClassName("nav-link")
+    const home = document.getElementById("home")
+    const header = document.querySelector("header")
+    for (const link of navLinks) {
+      link.classList.toggle(
+        "opaque",
+        (document.documentElement.scrollTop >=
+          home.offsetHeight - header.offsetHeight / 2 &&
+          document.documentElement.scrollTop <=
+            home.offsetHeight * 2 - header.offsetHeight / 2) ||
+          document.documentElement.scrollTop >=
+            home.offsetHeight * 3 - header.offsetHeight / 2
+      )
+    }
+  })
 
 const Header = ({ siteTitle }) => (
   <header
