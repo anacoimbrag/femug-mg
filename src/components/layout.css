@@ -752,7 +752,7 @@ pre tt:after {
 }
 
 .opaque {
-  color: #1e1d1e !important;
+  color: #1e1d1e;
 }
 
 .footer-link {
