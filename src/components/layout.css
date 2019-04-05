@@ -807,4 +807,8 @@ header .icon {
     padding: 1.5rem;
     padding-top: 18rem;
   }
+
+  .responsive #menu-icon {
+    color: white;
+  }
 }
