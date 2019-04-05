@@ -752,7 +752,7 @@ pre tt:after {
 }
 
 .opaque {
-  color: #1e1d1e;
+  color: #1e1d1e !important;
 }
 
 .footer-link {
@@ -762,4 +762,49 @@ pre tt:after {
   transition: color 0.5s ease;
   margin-left: 1em;
   font-size: 0.8rem;
+}
+
+header .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    height: 0;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1e1d1e;
+    /* transition: all 0.5s ease-in-out; */
+  }
+
+  .navbar a {
+    color: white;
+    padding-top: 0.8rem;
+    display: block;
+  }
+
+  header .icon {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+  }
+
+  header {
+    flex-direction: row !important;
+  }
+
+  #home .texts {
+    padding-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .responsive nav {
+    height: auto;
+    padding: 1.5rem;
+    padding-top: 18rem;
+  }
 }
